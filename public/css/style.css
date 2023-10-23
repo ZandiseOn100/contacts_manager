@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #584848;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ccc;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+.form-container{
+    margin: 60px;
+    padding: 20px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"]
+{
+    padding: 12px 10px;
+    border-radius: 5px;
+    background-color: #584848;
+    margin-top: 10px;
+}
+textarea{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 200px;
+    background-color: #584848;
+    resize: none;
+}
+button{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgb(68, 65, 65);
+    padding: 12px 10px;
+    color:#ccc;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+
+    background-color: rgb(73, 56, 56);
+    color:#d7cfcf;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 5px rgba(236, 63, 63, 0.6);
+}
+.button{
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgb(68, 65, 65);
+    padding: 2px 2px;
+    color:#9490c6;
+    cursor: pointer;
+    font-weight: bold;
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #9490c6;
+}
+.error {
+    border: 1px solid rgb(255, 0, 0);
+}
+.error-message {
+    color: rgb(255, 0, 0);
+}
+
+/* Media queries */
+/* Mobile */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px; /* Adjust font size for better readability on smaller screens */
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+    .display {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+        display: block; /* Set display to block for a more vertical layout on mobile */
+    }
+    .form-container {
+        margin: 20px; /* Reduce margin for better centering on smaller screens */
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 90%; /* Full-width input fields for mobile */
+        max-width: none; /* Remove max width */
+    }
+    textarea {
+        width: 90%; /* Full-width text area for mobile */
+        max-width: none; /* Remove max width */
+    }
+    button {
+        width: 100%; /* Full-width buttons for mobile */
+        max-width: none; /* Remove max width */
+    }
+    .button {
+        width: 100%; /* Full-width buttons for mobile */
+        max-width: none; /* Remove max width */
+    }
+}
+
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 28px;
+        margin: 20px; /* Add margin for spacing on larger screens */
+    }
+    .display {
+        font-size: 16px;
+        padding: 40px; /* Increase padding for better spacing */
+        display: flex; /* Set display to flex for a more horizontal layout */
+    }
+    .form-container {
+        margin: 100px; /* Wider margin for better centering on larger screens */
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 80%; /* Wider input fields */
+        max-width: 400px; /* Set a max width for better readability */
+    }
+    textarea {
+        width: 80%; /* Wider text area */
+        max-width: 400px; /* Set a max width for better readability */
+    }
+    button {
+        width: 30%; /* Wider buttons */
+        max-width: 200px; /* Set a max width for better button sizing */
+    }
+    .button {
+        width: 30%; /* Wider buttons */
+        max-width: 200px; /* Set a max width for better button sizing */
+    }
+}
